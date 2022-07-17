@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iframes</title>
+    <link
+      rel="stylesheet"
+      href="https://code.s3.yandex.net/web-code/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__title-container">
+            <h1 class="header__title">
+              The Trans-Siberian Railway: the world's longest railroad journey
+            </h1>
+            <p class="header__description">
+              Vladivostok, Khabarovsk, Izhevsk, Moscow — 18 days en route in
+              total. This is how musician David Bowie traveled to Europe after
+              his tour of Japan in the spring of 1973. Bowie had a fear of
+              flying, so he took the train.
+            </p>
+          </div>
+          <div class="header__counter-container">
+            <div class="header__counter header__counter_type_km">
+              <span class="header__counter-value" id="counter-km">0</span>
+              km.
+            </div>
+            <div class="header__counter header__counter_type_days">
+              <span class="header__counter-value" id="counter-days">0</span>
+              days.
+            </div>
+            <div class="header__audio-container">
+              <audio
+                src="https://pictures.s3.yandex.net/iframes_topic/audio.mp3"
+                type="audio/mp3"
+                loop
+                controls
+              ></audio>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="cities">
+        <div class="cities__container">
+          <div class="cities__city" id="city-kostroma">
+            <div
+              class="cities__video-container cities__video-container_name_kostroma"
+            >
+              <video
+                src="https://pictures.s3.yandex.net/iframes_topic/1.mp4"
+                poster="https://code.s3.yandex.net/web-code/msk-kostroma.jpg"
+                type="video/mp4"
+                controls
+              ></video>
+            </div>
+            <p class="cities__text">
+              First, you see the familiar landscapes of the European part of
+              Russia: fields, cottages, villages, woods, and power lines. It
+              feels almost like travelling through the land of the hobbits, or
+              into the past, back to 1973; if feels like David Bowie could walk
+              in from the next compartment at any moment wearing a Japanese
+              kimono and bright pants.
+            </p>
+          </div>
+          <div class="cities__city" id="city-yekaterinburg">
+            <div
+              class="cities__video-container cities__video-container_name_yekaterinburg"
+            >
+              <video
+                src="https://pictures.s3.yandex.net/iframes_topic/2.mp4"
+                poster="https://code.s3.yandex.net/web-code/kostroma-yekaterinburg.jpg"
+                type="video/mp4"
+                controls
+              ></video>
+            </div>
+            <p class="cities__text">
+              It's time to get into your element. In Kostroma, you get off the
+              train and buy all the things you forgot to pack: instant coffee,
+              instant noodles, and a six pack of beer. Now make yourself
+              comfortable. We're not even halfway there yet.
+            </p>
+          </div>
+          <div class="cities__city" id="city-omsk">
+            <div
+              class="cities__video-container cities__video-container_name_omsk"
+            >
+              <video
+                src="https://pictures.s3.yandex.net/iframes_topic/3.mp4"
+                poster="https://code.s3.yandex.net/web-code/yekaterinburg-omsk.jpg"
+                type="video/mp4"
+                controls
+              ></video>
+            </div>
+            <p class="cities__text">
+              Your journey has transcended the physical realm and moved into the
+              spiritual. This mystical experince of immersing yourself in the
+              depths of Russia's soul will stay with you forever. Europe is far
+              behind, and Asia is still lightyears away. You may even have been
+              stationary this whole time. You've lost the count of how many
+              miles you've traveled, and now you're not even sure if train is
+              moving at all. On the other hand, if you look out the window for a
+              long time (to be honest, there's not much else to do), you can see
+              ancient mammoths of past millenia wandering these plains.
+            </p>
+          </div>
+          <div class="cities__city" id="city-yablonoi-pereval">
+            <div
+              class="cities__video-container cities__video-container_name_yablonoi-pereval"
+            >
+              <video
+                src="https://pictures.s3.yandex.net/iframes_topic/4.mp4"
+                poster="https://code.s3.yandex.net/web-code/pereval.jpg"
+                type="video/mp4"
+                controls
+              ></video>
+            </div>
+            <p class="cities__text">
+              You're now at the very heart of the continent, and there's no sign
+              of either ancient civilizations, or of Europe and Asia. Here the
+              train passes through the highest point of the Trans-Siberian
+              Railway, and the path to the sea begins. Before, the road narrowed
+              here to one track and went through a tiny tunnel, the entrance to
+              which was adorned with a sign pointing you towards the great
+              ocean.
+            </p>
+          </div>
+          <div class="cities__city" id="city-khabarovsk">
+            <div
+              class="cities__video-container cities__video-container_name_khabarovsk"
+            >
+              <video
+                src="https://pictures.s3.yandex.net/iframes_topic/5.mp4"
+                poster="https://code.s3.yandex.net/web-code/pereval-khb.jpg"
+                type="video/mp4"
+                controls
+              ></video>
+            </div>
+            <p class="cities__text">
+              You're starting to think you'll most likely spend the rest of your
+              life in the train when Khabarovsk appears on the horizon. You
+              already know more about your fellow passengers than about your
+              family members. Anyway, only some 800 kilometers more to go, and
+              you'll be arriving in Vladivostok.
+            </p>
+          </div>
+          <div class="cities__city" id="city-vladivostok">
+            <div
+              class="cities__video-container cities__video-container_name_vladivostok"
+            >
+              <div class="cities__video-title">Vladivostok</div>
+              <iframe
+                id="ytplayer"
+                type="text/html"
+                width="720"
+                height="405"
+                src="https://www.youtube.com/embed/Dl3TWRAf3tg?start=15"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                id="ytplayer"
+                type="text/html"
+                width="720"
+                height="405"
+                src="https://www.youtube.com/embed/Dl3TWRAf3tg?start=15"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p class="cities__text">
+              This has been an extraordinary journey. Everyone has their very
+              own story to tell, but anyone who undertakes this journey is a
+              different person to the one who started it.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="iframes">
+        <div class="iframes__container">
+          <div class="iframe iframe__weather">
+            <div class="iframe__title">Check the route weather ⟶</div>
+            <div class="iframe__item">
+              <iframe
+                src="https://www.meteoblue.com/en/weather/widget/daily/moscow_russia_524901?geoloc=fixed&days=7&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light"
+                frameborder="0"
+                scrolling="NO"
+                allowtransparency="true"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+                style="width: 378px; height: 420px"
+              ></iframe>
+
+              <iframe
+                src="https://www.meteoblue.com/en/weather/widget/daily/irkutsk_russia_2023469?geoloc=fixed&days=7&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light"
+                frameborder="0"
+                scrolling="NO"
+                allowtransparency="true"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+                style="width: 378px; height: 420px"
+              ></iframe>
+
+              <iframe
+                src="https://www.meteoblue.com/en/weather/widget/daily/vladivostok_russia_2013348?geoloc=fixed&days=7&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&layout=light"
+                frameborder="0"
+                scrolling="NO"
+                allowtransparency="true"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
+                style="width: 378px; height: 420px"
+              ></iframe>
+            </div>
+          </div>
+          <div class="iframe iframe__music">
+            <div class="iframe__title">Listen to music ⟶</div>
+            <div class="iframe__item">
+              <iframe
+                style="border: 1px solid red; width: 100%; height: 450px"
+                width="900"
+                height="600"
+                src="https://music.yandex.com/iframe/#playlist/yamusic-bestsongs/631822"
+              >
+                Listen to
+                <a
+                  href="https://music.yandex.com/users/yamusic-bestsongs/playlists/631822?lang=en"
+                >
+                  Best of A$AP Rocky</a
+                >
+                —
+                <a href="https://music.yandex.com/users/yamusic-bestsongs">
+                  Yandex.Music</a
+                >
+                on Yandex Music
+              </iframe>
+            </div>
+          </div>
+          <div class="iframe iframe__books">
+            <div class="iframe__title">Read something cool ⟶</div>
+            <div class="iframe__item">
+              <iframe
+                type="text/html"
+                width="336"
+                height="550"
+                allowfullscreen
+                style="max-width: 100%"
+                src="https://read.amazon.com/kp/card?asin=B073D36KNM&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_qmq.BbMTSMXNQ"
+                >Perfect book for a long train ride
+              </iframe>
+            </div>
+          </div>
+          <div class="iframe iframe__map">
+            <div class="iframe__title">Route map ⟶</div>
+            <div class="iframe__item">
+              <a
+                href="https://yandex.com/maps/?um=constructor%3A12011b7aac423878b467b68a49311b66087f0455a03129904be5980dd3928468&amp;source=constructorStatic"
+                target="_blank"
+                ><img
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A12011b7aac423878b467b68a49311b66087f0455a03129904be5980dd3928468&amp;width=600&amp;height=439&amp;lang=en_FR"
+                  alt=""
+                  style="border: 0"
+              /></a>
+            </div>
+          </div>
+          <div class="iframe iframe__social">
+            <div class="iframe__title">My post on social ⟶</div>
+            <div class="iframe__item">
+              <iframe
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FDrachiosaurus%2Fposts%2F1857733597882973&width=500"
+                width="500"
+                height="688"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                allowtransparency="true"
+                allow="encrypted-media"
+                >My Facebook post about The Trans-Siberian Railway journey
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
